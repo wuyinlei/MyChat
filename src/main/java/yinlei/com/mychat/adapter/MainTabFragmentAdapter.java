@@ -1,4 +1,4 @@
-package yinlei.com.mychat;
+package yinlei.com.mychat.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
+
+import yinlei.com.mychat.R;
 
 /**
  * Created by wuyin on 2016/5/26.

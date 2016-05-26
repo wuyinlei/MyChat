@@ -1,7 +1,9 @@
-package yinlei.com.mychat;
+package yinlei.com.mychat.utils;
 
 import android.content.Context;
 import android.view.View;
+
+import yinlei.com.mychat.widget.BadgeView;
 
 /**
  * Created by wuyin on 2016/5/26.

@@ -1,9 +1,8 @@
-package yinlei.com.mychat;
+package yinlei.com.mychat.ui;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,12 +11,17 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import yinlei.com.mychat.R;
+import yinlei.com.mychat.adapter.MainTabFragmentAdapter;
 import yinlei.com.mychat.fragment.ContactFragment;
 import yinlei.com.mychat.fragment.DiscoveryFragment;
 import yinlei.com.mychat.fragment.MessageFragment;
 import yinlei.com.mychat.fragment.MineFragment;
+import yinlei.com.mychat.ui.base.BaseActivity;
+import yinlei.com.mychat.utils.BadgeUtil;
+import yinlei.com.mychat.widget.BadgeView;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends BaseActivity {
 
 
     //Tab索引
@@ -152,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     //查询是否有新消息
     private void weatherNewMsg() {
         for (int i = 0 ; i < views.size();i++) {
-            trolleyBadgeView = BadgeUtil.addBadge(MainActivity.this, views.get(i), i*10);
+            trolleyBadgeView = BadgeUtil.addBadge(HomeActivity.this, views.get(i), i*10);
             trolleyBadgeView.show();
         }
 

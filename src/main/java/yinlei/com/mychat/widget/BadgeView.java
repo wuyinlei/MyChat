@@ -1,4 +1,4 @@
-package yinlei.com.mychat;
+package yinlei.com.mychat.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
